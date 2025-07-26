@@ -1,0 +1,45 @@
+/* Button group */
+.hp-button-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Button */
+.hp-button {
+  --button-color: unset;
+  --button-bg-color: unset;
+  --button-border-color: currentColor;
+
+  display: inline-flex;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 0.5em 1.25em;
+  text-decoration: none;
+  background-color: var(--button-bg-color);
+  color: var(--button-color);
+  border-color: var(--button-border-color);
+}
+
+.hp-button:is(.is-primary) {
+  --button-bg-color: var(--wire-button);
+  --button-color: var(--wire-accent);
+}
+
+.hp-button.is-primary:is(:hover, :focus) {
+  --button-color: var(--color-white);
+  --button-bg-color: var(--wire-accent);
+}
+
+.hp-button:is(.is-outline) {
+  --button-bg-color: transparent;
+  --button-color: var(--wire-accent);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.hp-button.is-outline:is(:hover, :focus) {
+  --button-color: var(--wire-text-secondary);
+}

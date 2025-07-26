@@ -7,6 +7,9 @@
 
   --content-width: var(--breakpoint-2xl);
 
+  --color-white: #fff;
+  --color-black: #000;
+
   /* ======================== */
   /* WIREFRAME */
   /* ======================== */

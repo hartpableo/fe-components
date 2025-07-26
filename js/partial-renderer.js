@@ -4,7 +4,7 @@ window.customElements.define('hp-partial', class extends HTMLElement {
       this.render();
       return;
     }
-    document.addEventListener('DOMContentLoaded', this.render, {once: true});
+    document.addEventListener('DOMContentLoaded', () => this.render(), {once: true});
   }
 
   render = () => {
