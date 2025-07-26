@@ -1,0 +1,4 @@
+.hp-spacing {
+  --spacing-block: 4rem;
+  padding: var(--spacing-block) 0;
+}

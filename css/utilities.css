@@ -1,0 +1,16 @@
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding-inline: 1rem;
+}
+
+/* User content */
+.hp-user-content > * {
+  margin: unset;
+}
+
+.hp-user-content > *:not(:last-child) {
+  margin-bottom: 1em;
+}

@@ -1,0 +1,42 @@
+.hp-hero-1 {
+  background-color: var(--wire-bg);
+  color: var(--wire-text-primary);
+  position: relative;
+  isolation: isolate;
+  min-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.hp-hero-1-title {
+  font-weight: 700;
+  margin: 0;
+  font-size: 2.813rem;
+  line-height: 1.15;
+}
+
+.hp-hero-1-body {
+  margin-top: 1rem;
+}
+
+.hp-hero-1-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+@media (min-width: 992px) {
+  .hp-hero-1-title {
+    font-size: 3.75rem;
+  }
+
+  .hp-hero-1-body {
+    max-width: 50%;
+  }
+}
